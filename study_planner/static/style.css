@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+
+    background-color: #0d0d0d;
+
+    
+    background-image: radial-gradient(#2a2a2a 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+h1 {
+    color: white;
+    margin-top: 40px;
+}
+
+form {
+    background: #1a1a1a;
+    color: white;
+    padding: 30px;
+    margin: 30px auto;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+}
+
+
+input, select {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    background: #2a2a2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #666;
+}
+
+
+.card {
+    background: #1a1a1a;
+    color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #2a2a2a;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.btn {
+    display: inline-block;
+    background: #444;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #666;
+}
+
+
+.graph {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+input:focus, select:focus {
+    box-shadow: 0 0 5px #ff0000;
+    outline: none;
+    background: #2a2a2a;
+    color: white;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #2a2a2a inset !important;
+    -webkit-text-fill-color: white !important;
+}

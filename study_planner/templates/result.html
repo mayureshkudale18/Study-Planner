@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1> Smart Study Planner</h1>
+
+    <div class="card">
+        <h2> Study Analysis</h2>
+
+        <p><b>Total Study Hours Needed:</b> {{ total_hours }}</p>
+        <p><b>Pages per Day:</b> {{ pages_per_day }}</p>
+        <p><b>Hours per Day Needed:</b> {{ hours_per_day }}</p>
+    </div>
+
+    <div class="card">
+        <h2> Daily Study Plan</h2>
+
+        <ul>
+            {% for day in plan %}
+                <li>{{ day }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2> Study Distribution</h2>
+
+        <img src="{{ url_for('static', filename=graph) }}" class="graph">
+    </div>
+
+    <div class="card">
+        <h3>{{ status }}</h3>
+    </div>
+
+    <br>
+    <a href="/" class="btn">⬅ Go Back</a>
+
+</body>
+</html>

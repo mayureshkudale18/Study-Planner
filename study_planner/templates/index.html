@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1> Smart Study Planner</h1>
+
+    <form action="/result" method="post">
+
+        <label>Subjects (comma separated):</label><br>
+        <input type="text" name="subjects" placeholder="Physics, Chemistry, Math" required><br><br>
+
+        <label>Difficulty (comma separated):</label><br>
+        <input type="text" name="difficulty" placeholder="hard, medium, easy" required><br><br>
+
+        <label>Total Days Left:</label><br>
+        <input type="number" name="days" required><br><br>
+
+        <label>Total Pages:</label><br>
+        <input type="number" name="pages" required><br><br>
+
+        <label>Study Hours per Day:</label><br>
+        <input type="number" name="hours" required><br><br>
+
+        <button type="submit">Generate Plan</button>
+
+    </form>
+
+</body>
+</html>
